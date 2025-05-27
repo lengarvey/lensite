@@ -1,0 +1,8 @@
+<h3>{{ title }}</h3>
+<div class="image-gallery">
+    <div class="gallery-grid">
+        <div class="gallery-images">
+            {{ body | markdown(inline=true) | safe }}
+        </div>
+    </div>
+</div>

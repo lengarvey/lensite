@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block content %}
+
+<article class="blog-post">
+    <header class="post-header">
+        <h2 class="post-title">{{ page.title }}</h2>
+        <div class="post-meta">
+            <span class="post-date">{{ page.date }}</span>
+            <span class="post-category"><a href="#">???</a></span>
+        </div>
+    </header>
+
+    <div class="post-content">{{ page.content | safe }}</div>
+
+    <footer class="post-footer">
+        <div class="post-tags">
+            <a href="#" class="tag">#typography</a>
+            <a href="#" class="tag">#webdesign</a>
+            <a href="#" class="tag">#readability</a>
+        </div>
+    </footer>
+</article>
+
+{% endblock content %}

@@ -1,0 +1,34 @@
+{% extends "base.html" %} {% block hero %}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="profile-image">
+                <img src="/len.jpg" alt="Len's Profile Picture" />
+            </div>
+            <h1 class="profile-name">Len Garvey</h1>
+            <p class="profile-bio">
+                Technology, photography, and fitness. </br>Based in Melbourne
+                (Naarm).
+            </p>
+            <div class="social-links">
+                <a href="https://hachyderm.io/@len" class="social-icon" aria-label="Mastodon"><img src="/mastodon.svg" alt="Mastodon" /></a>
+                <a href="#" class="social-icon" aria-label="Instagram"><img src="/glass-yellow.svg" alt="glass.photo" /></a>
+                <a href="#" class="social-icon" aria-label="LinkedIn"><img src="/linkedin.svg" alt="LinkedIn" /></a>
+                <a href="#" class="social-icon" aria-label="GitHub"><img src="/github.svg" alt="GitHub" /></a>
+                <a href="#" class="social-icon" aria-label="Mail"><img src="/mail-ios.svg" alt="Email Me" /></a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock hero %} {% block content %} {% for page in section.pages %}
+<article class="blog-post">
+    <header class="post-header">
+        <a href="{{ page.permalink | safe }}">
+            <h2 class="post-title">{{ page.title }}</h2>
+        </a>
+    </header>
+    <div class="post-content">{{ page.summary | safe }}</div>
+    <a href="{{ page.permalink | safe }}#continue-reading">Continue reading</a>
+</article>
+
+{% endfor %} {% endblock content %}
