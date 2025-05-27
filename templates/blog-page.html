@@ -1,22 +1,39 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %}
+{% block hero %}
+<section class="hero small-hero">
+    <div class="container">
+        <a class="home-link" href="/">
+        <div class="hero-content">
+
+                <div class="profile-image">
+                    <img src="/len.jpg" alt="Len's Profile Picture" />
+
+                </div>
+                Home
+
+        </div>
+        </a>
+    </div>
+</section>
+{% endblock hero %}
+
+{% block content %}
 
 <article class="blog-post">
     <header class="post-header">
-        <h2 class="post-title">{{ page.title }}</h2>
-        <div class="post-meta">
-            <span class="post-date">{{ page.date }}</span>
-            <span class="post-category"><a href="#">???</a></span>
-        </div>
+        <h2 class="post-title">{{ page.title }} <span class="post-date">{{ page.date }}</span></h2>
     </header>
 
     <div class="post-content">{{ page.content | safe }}</div>
 
     <footer class="post-footer">
+        {%- if page.taxonomies and page.taxonomies.tags -%}
         <div class="post-tags">
-            <a href="#" class="tag">#typography</a>
-            <a href="#" class="tag">#webdesign</a>
-            <a href="#" class="tag">#readability</a>
+            {% for tag in page.taxonomies.tags %}
+            <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" class="tag">#{{ tag }}</a>
+            {% endfor %}
         </div>
+        {%- endif -%}
     </footer>
 </article>
 

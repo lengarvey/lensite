@@ -2,6 +2,8 @@
 title = "Rebuilding My Website; or a guide to Zola"
 date = 2025-05-27
 draft = true
+[taxonomies]
+tags = ["zola", "web development"]
 +++
 
 As a technologist I've had an unloved, underutilised website for years. Since it was time to rebuild, I figured it was the perfect time to learn some "new" web technologies.

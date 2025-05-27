@@ -1,6 +1,8 @@
 +++
 title = "Dear Backbone. Love letters from a Rails dev."
 date = 2013-05-16
+[taxonomies]
+tags = ["backbone", "javascript", "web development"]
 +++
 
 In this blog post I'm going to present a few things. Most of all I'm going to demonstrate how I would implement nice, structured front-end code in an already existing traditional Rails application. I'm going to do this using Backbone but it's probably unlike how you may have seen Backbone used before. Finally I'm also going to present the technique I use to integrate this in with your Rails application. Importantly I think that we should be adopting sensibile application defaults in addition to the defaults that Rails provides us. By adopting our own per-application defaults we can avoid writing lots of code.

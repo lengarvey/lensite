@@ -268,6 +268,21 @@ blockquote cite {
     text-align: center;
 }
 
+.small-hero {
+    padding: var(--spacing-md) 0;
+    .profile-image {
+        height: 70px;
+        width: 70px;
+    }
+    .hero-content {
+        flex-direction: row;
+        gap: var(--spacing-md);
+    }
+    .home-link p {
+        margin-bottom: 0;
+    }
+}
+
 .hero-content {
     display: flex;
     flex-direction: column;
@@ -367,6 +382,15 @@ blockquote cite {
     margin-top: 0;
 }
 
+.post-date {
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: var(--color-bg-muted);
+    display: inline-block;
+    padding: 3px;
+    color: var(--color-text-light);
+}
+
 .post-meta {
     margin-bottom: var(--spacing-xl);
     color: var(--color-text-light);
@@ -387,6 +411,10 @@ blockquote cite {
     font-family: var(--font-serif);
     font-family: var(--font-sans);
     line-height: 1.8;
+
+    p {
+        overflow-x: scroll;
+    }
 }
 
 .post-content h2,

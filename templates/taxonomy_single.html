@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  {% block title %}
+   {{ config.title }} &middot; <a href="/tags">Tags</a> &middot; {{ term.name | capitalize }}
+  {% endblock title %}
+
+  <h1>{{ term.name | capitalize }}</h1>
+
+  <div class="page-intro">
+    <p class="larger">View all <a href="/tags">tags</a>.</p>
+  </div>
+
+  <ul class="postlist">
+    {% for page in term.pages | sort(attribute="date") | reverse %}
+    <li class="postlist-item">
+      {% if page.date %}
+      <div class="date">
+        <time class="postlist-date">{{ page.date | date(format="%d %B %Y") }}</time>
+      </div>
+      {% endif %}
+      <div class="postlist-head">
+        <h2><a class="postlist-title" href="{{ page.permalink }}">{{ page.title }}</a></h2>
+      </div>
+      <p class="postlist-description">{{ page.description }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+
+  {% endblock content %}

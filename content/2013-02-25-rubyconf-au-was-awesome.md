@@ -1,6 +1,8 @@
 +++
 title = "RubyConf AU was Awesome"
 date = 2013-02-25
+[taxonomies]
+tags = ["ruby", "conference", "melbourne"]
 +++
 
 The first (and hopefully annual) [RubyConf AU](http://www.rubyconf.org.au/) was held in Melbourne in late February

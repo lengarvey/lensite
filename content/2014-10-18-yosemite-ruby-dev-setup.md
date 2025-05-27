@@ -1,6 +1,8 @@
 +++
 title = "Yosemite Ruby Dev Setup"
 date = "2014-10-18"
+[taxonomies]
+tags = ["ruby", "dev", "setup"]
 +++
 
 On Friday the 17th of October, Apple released OSX Yosemite. Being a bit of an Apple fanboy I immediately

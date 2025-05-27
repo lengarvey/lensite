@@ -24,7 +24,7 @@
 <article class="blog-post">
     <header class="post-header">
         <a href="{{ page.permalink | safe }}">
-            <h2 class="post-title">{{ page.title }}</h2>
+            <h2 class="post-title">{{ page.title }} <span class="post-date">{{ page.date | date(format="%B %Y") }}</span></h2>
         </a>
     </header>
     <div class="post-content">{{ page.summary | safe }}</div>

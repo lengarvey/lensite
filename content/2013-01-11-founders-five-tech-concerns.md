@@ -1,6 +1,8 @@
 +++
 title = "Founders Five Tech Concerns"
 date = "2013-01-11"
+[taxonomies]
+tags = ["technology", "startups", "entrepreneurship"]
 +++
 
 Working in [Tank Stream Labs](http://www.tankstreamlabs.com) (a great new co-working space here in Sydney) I come

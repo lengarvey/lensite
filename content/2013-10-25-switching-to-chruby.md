@@ -1,6 +1,8 @@
 +++
 title = "Switching to chruby"
 date = 2013-10-25
+[taxonomies]
+tags = ["chruby", "ruby", "shell scripting"]
 +++
 
 ## About chruby
