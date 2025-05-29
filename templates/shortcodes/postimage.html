@@ -1,4 +1,6 @@
 <figure class="post-image">
-    <img src="{{ src }}" alt="{{ alt }}" />
-    <figcaption>{{ body }}</figcaption>
+  <img src="{{ src }}" alt="{{ alt }}" />
+  {% if body %}
+  <figcaption>{{ body }}</figcaption>
+  {% endif %}
 </figure>
