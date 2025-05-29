@@ -1,7 +1,7 @@
 +++
 title = "Rebuilding my website; or a slightly post technical person shaves some yaks."
 date = 2025-05-27
-draft = true
+draft = false
 [taxonomies]
 tags = ["zola", "web development", "hosting", "netlify", "vibe coding"]
 +++
@@ -34,7 +34,7 @@ So. I landed on the Rust-based [Zola](https://www.getzola.org/). It's a single b
 
 I used Zed + Claude to vibe my way to a blog design that I liked. This let me focus on building the features that the blog would need in Zola, but still have something that I would enjoy looking at.
 
-![vibe design](/vibe-design.jpg)
+![vibe design](/vibe-blog-design.jpg)
 
 ## Netlify for hosting
 
