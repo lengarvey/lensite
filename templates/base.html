@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lensite Blog</title>
+    <title>{% block title %}Len Garvey — Portfolio{% endblock title %}</title>
     <link rel="stylesheet" href="/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,11 +16,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
-  <body>
+  <body data-mode="personal">
     {% block hero %}{% endblock hero %}
     <main class="site-content">
       <div class="container">{% block content %}{% endblock content %}</div>
     </main>
+    <script src="/theme-toggle.js"></script>
   </body>
 </html>
 `

@@ -1,0 +1,318 @@
+{% extends "base.html" %}
+
+{% block hero %}
+<section class="design-lab-hero">
+    <div class="container">
+        <p class="design-lab-kicker">Design studies</p>
+        <h1>Six possible directions for the next version of this site</h1>
+        <p class="design-lab-intro">
+            Each concept keeps the same personal content, but shifts the visual language,
+            structure, and browsing experience.
+        </p>
+        <div class="design-lab-nav">
+            <a href="#concept-editorial">Editorial</a>
+            <a href="#concept-studio">Studio</a>
+            <a href="#concept-atlas">Atlas</a>
+            <a href="#concept-garden">Garden</a>
+            <a href="#concept-brutal">Brutal</a>
+            <a href="#concept-nocturne">Nocturne</a>
+        </div>
+    </div>
+</section>
+{% endblock hero %}
+
+{% block content %}
+<section class="design-lab-page">
+    <article id="concept-editorial" class="mockup mockup-editorial">
+        <p class="mockup-label">Concept 01</p>
+        <header class="mockup-header">
+            <p class="mockup-brand">Len Garvey</p>
+            <nav>
+                <a href="#">Essays</a>
+                <a href="#">Field Notes</a>
+                <a href="#">About</a>
+            </nav>
+        </header>
+        <div class="mockup-grid">
+            <div>
+                <h2>Editorial Notebook</h2>
+                <p>
+                    A magazine-inspired layout that favors typography and long-form writing.
+                    It works well if the blog becomes your main surface.
+                </p>
+                <div class="chip-row">
+                    <span>Long-form</span>
+                    <span>Warm palette</span>
+                    <span>Slow reading</span>
+                </div>
+            </div>
+            <div class="mockup-photo">
+                <img src="/len.jpg" alt="Portrait of Len" />
+            </div>
+        </div>
+        <div class="mockup-cards">
+            <article>
+                <p class="kicker">Featured essay</p>
+                <h3>Rebuilding My Website</h3>
+                <p>What changed from version one, and what still needs refinement.</p>
+            </article>
+            <article>
+                <p class="kicker">Latest notes</p>
+                <h3>The Death Of Software Engineering</h3>
+                <p>A practical look at hype cycles versus daily engineering work.</p>
+            </article>
+            <article>
+                <p class="kicker">Visual log</p>
+                <h3>Glass Photo Journal</h3>
+                <p>Recent captures from Melbourne, grouped by place and season.</p>
+            </article>
+        </div>
+    </article>
+
+    <article id="concept-studio" class="mockup mockup-studio">
+        <p class="mockup-label">Concept 02</p>
+        <header class="mockup-header">
+            <p class="mockup-brand">len.run()</p>
+            <nav>
+                <a href="#">Projects</a>
+                <a href="#">Experiments</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+        <div class="mockup-grid">
+            <div>
+                <h2>Creative Studio</h2>
+                <p>
+                    A bold portfolio-first system. It is more energetic, built around
+                    experiments, prototypes, and technical artifacts.
+                </p>
+                <div class="chip-row">
+                    <span>Project-first</span>
+                    <span>High contrast</span>
+                    <span>Animated accents</span>
+                </div>
+            </div>
+            <div class="signal-panel">
+                <p>Current build</p>
+                <h3>Lensite vNext</h3>
+                <ul>
+                    <li>Writing workflow: stable</li>
+                    <li>Photo pipelines: in progress</li>
+                    <li>Design language: testing</li>
+                </ul>
+            </div>
+        </div>
+        <div class="mockup-cards">
+            <article>
+                <p class="kicker">Build log</p>
+                <h3>Shipping Better Blog Image Shortcodes</h3>
+                <p>Rethinking the rendering and authoring flow for media-heavy posts.</p>
+            </article>
+            <article>
+                <p class="kicker">Case study</p>
+                <h3>Yosemite Ruby Dev Setup</h3>
+                <p>A historical workflow piece reframed as a living setup guide.</p>
+            </article>
+            <article>
+                <p class="kicker">Prototype</p>
+                <h3>Reader Focus Mode</h3>
+                <p>Quiet mode with context-aware typography and a distraction budget.</p>
+            </article>
+        </div>
+    </article>
+
+    <article id="concept-atlas" class="mockup mockup-atlas">
+        <p class="mockup-label">Concept 03</p>
+        <header class="mockup-header">
+            <p class="mockup-brand">Len Atlas</p>
+            <nav>
+                <a href="#">Routes</a>
+                <a href="#">Journal</a>
+                <a href="#">Gallery</a>
+            </nav>
+        </header>
+        <div class="mockup-grid">
+            <div>
+                <h2>Field Atlas</h2>
+                <p>
+                    A travel-and-writing hybrid with map cues, timelines, and image-led
+                    stories. A fit if photography should sit equal to essays.
+                </p>
+                <div class="chip-row">
+                    <span>Image-led</span>
+                    <span>Earth tones</span>
+                    <span>Timeline layout</span>
+                </div>
+            </div>
+            <div class="map-panel">
+                <p>Now exploring</p>
+                <h3>Melbourne (Naarm)</h3>
+                <p>Street portraits, bikes, rainy mornings, and neighborhood walks.</p>
+            </div>
+        </div>
+        <div class="mockup-cards">
+            <article>
+                <p class="kicker">Route</p>
+                <h3>Yarra River Dawn Ride</h3>
+                <p>A short ride map with photos, timing, and notes for repeats.</p>
+            </article>
+            <article>
+                <p class="kicker">Journal</p>
+                <h3>Building Your Business On The Patio</h3>
+                <p>An archive essay reframed inside a modern personal chronology.</p>
+            </article>
+            <article>
+                <p class="kicker">Capture set</p>
+                <h3>Winter Glass Collection</h3>
+                <p>Twelve photos grouped by light quality and weather conditions.</p>
+            </article>
+        </div>
+    </article>
+
+    <article id="concept-garden" class="mockup mockup-garden">
+        <p class="mockup-label">Concept 04</p>
+        <header class="mockup-header">
+            <p class="mockup-brand">Garden Log</p>
+            <nav>
+                <a href="#">Seeds</a>
+                <a href="#">Patterns</a>
+                <a href="#">Systems</a>
+            </nav>
+        </header>
+        <div class="mockup-grid">
+            <div>
+                <h2>Data Garden</h2>
+                <p>
+                    A calmer dashboard-journal blend where writing and project tracking
+                    coexist. Good for ongoing experiments and progress snapshots.
+                </p>
+                <div class="chip-row">
+                    <span>Status-first</span>
+                    <span>Soft gradients</span>
+                    <span>Modular blocks</span>
+                </div>
+            </div>
+            <div class="garden-panel">
+                <p>Weekly signals</p>
+                <h3>Creative health</h3>
+                <div class="garden-meter"><span style="width: 82%"></span></div>
+                <div class="garden-meter"><span style="width: 64%"></span></div>
+                <div class="garden-meter"><span style="width: 73%"></span></div>
+            </div>
+        </div>
+        <div class="mockup-cards">
+            <article>
+                <p class="kicker">Now tending</p>
+                <h3>Personal Writing Engine</h3>
+                <p>Short prompts, weekly themes, and publishing cadence all in one place.</p>
+            </article>
+            <article>
+                <p class="kicker">Recently pruned</p>
+                <h3>Old Categories Cleanup</h3>
+                <p>Merged stale tags into broader topic clusters for easier browsing.</p>
+            </article>
+            <article>
+                <p class="kicker">Next up</p>
+                <h3>Photo Metadata Pipeline</h3>
+                <p>Auto labels for season, location, and camera to speed up curation.</p>
+            </article>
+        </div>
+    </article>
+
+    <article id="concept-brutal" class="mockup mockup-brutal">
+        <p class="mockup-label">Concept 05</p>
+        <header class="mockup-header">
+            <p class="mockup-brand">LEN // RAW</p>
+            <nav>
+                <a href="#">Posts</a>
+                <a href="#">Photos</a>
+                <a href="#">Bio</a>
+            </nav>
+        </header>
+        <div class="mockup-grid">
+            <div>
+                <h2>Brutal Signal</h2>
+                <p>
+                    A loud, poster-like design language with hard edges and oversized type.
+                    Useful if you want a memorable personality and minimal chrome.
+                </p>
+                <div class="chip-row">
+                    <span>Punchy</span>
+                    <span>Poster type</span>
+                    <span>Hard contrast</span>
+                </div>
+            </div>
+            <div class="brutal-panel">
+                <p>Broadcast</p>
+                <h3>New essay live now</h3>
+                <p>Notes from rebuilding this site after thirteen years of archives.</p>
+            </div>
+        </div>
+        <div class="mockup-cards">
+            <article>
+                <p class="kicker">Dispatch</p>
+                <h3>Ship. Show. Ask.</h3>
+                <p>A production mindset page with blunt updates and open questions.</p>
+            </article>
+            <article>
+                <p class="kicker">Archive hit</p>
+                <h3>Ruby Koans Revisited</h3>
+                <p>A modern reflection on old engineering habits that still matter.</p>
+            </article>
+            <article>
+                <p class="kicker">Photo story</p>
+                <h3>Monochrome Streets</h3>
+                <p>One scene, five lenses, and what each framing changed.</p>
+            </article>
+        </div>
+    </article>
+
+    <article id="concept-nocturne" class="mockup mockup-nocturne">
+        <p class="mockup-label">Concept 06</p>
+        <header class="mockup-header">
+            <p class="mockup-brand">Afterlight Journal</p>
+            <nav>
+                <a href="#">Letters</a>
+                <a href="#">Frames</a>
+                <a href="#">Connect</a>
+            </nav>
+        </header>
+        <div class="mockup-grid">
+            <div>
+                <h2>Nocturne Letters</h2>
+                <p>
+                    A cinematic evening style for reflective writing and curated photo sets.
+                    It emphasizes mood, rhythm, and slower storytelling.
+                </p>
+                <div class="chip-row">
+                    <span>Moody</span>
+                    <span>Elegant serif</span>
+                    <span>Narrative-first</span>
+                </div>
+            </div>
+            <div class="nocturne-panel">
+                <p>Playing now</p>
+                <h3>Night Tram Notes</h3>
+                <p>A short sequence of images and observations from late city rides.</p>
+            </div>
+        </div>
+        <div class="mockup-cards">
+            <article>
+                <p class="kicker">Letter</p>
+                <h3>Dear Backbone</h3>
+                <p>Archive writing reframed as a personal technology memoir.</p>
+            </article>
+            <article>
+                <p class="kicker">Series</p>
+                <h3>Winter Window Light</h3>
+                <p>A photo collection organized by hour rather than location.</p>
+            </article>
+            <article>
+                <p class="kicker">Notebook</p>
+                <h3>Silent Mornings</h3>
+                <p>Micro-essays on routines, focus, and training cadence.</p>
+            </article>
+        </div>
+    </article>
+</section>
+{% endblock content %}
