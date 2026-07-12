@@ -1,7 +1,5 @@
 +++
-title = "Spooky Beach 👻
-
-I learned to surf on this beach as a kid. Was amazing coming back 30 years later. The beach is basically identical."
+title = "Spooky Beach 👻"
 date = 2025-07-09
 draft = false
 [taxonomies]
